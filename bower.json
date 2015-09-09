@@ -1,0 +1,28 @@
+{
+  "name": "firebase-manager",
+  "version": "1.0.1",
+  "authors": [
+    "Zecat <jullienfelix@gmail.com>"
+  ],
+  "description": "Send events to this element to manage firebase's features.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "firebase-manager.html",
+  "license": "MIT",
+  "homepage": "https://github.com/Zecat/firebase-manager",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "firebase-element": "GoogleWebComponents/firebase-element#~1.0.5",
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  }
+}

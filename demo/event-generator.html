@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="event-generator">
+  <template>
+  	<input value="{{username}}"/>
+  	<input value="{{message}}"/>
+	<paper-button on-tap="_sendMessage">Send message</paper-button>
+  </template>
+  <script>
+  (function() {
+    'use strict';
+
+    Polymer({
+      is: 'event-generator',
+
+      _sendMessage: function() {
+      	this.fire('firebase-upload', {
+      	  username: this.username,
+      	  message: this.message
+      	});
+      }
+
+    });
+  })();
+  </script>
+</dom-module>
